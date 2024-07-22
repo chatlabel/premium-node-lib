@@ -1,5 +1,5 @@
 export type SendTemplateRequest = {
-	number: string;
+	number?: string;
 	contactId?: string;
 	templateId: string;
 	templateComponents?: Array<SendTemplateComponent>;
@@ -9,27 +9,27 @@ export type SendTemplateRequest = {
 
 export type SendTemplateComponent = {
 	type: string;
-	sub_type: string;
+	sub_type?: string;
 	parameters: Array<{
 		type: string;
-		image: {
+		image?: {
 			link: string;
 		};
-		video: {
+		video?: {
 			link: string;
 		};
-		document: {
+		document?: {
 			link: string;
 		};
-		currency: {
+		currency?: {
 			fallback_value: string;
 			code: string;
 			amount_1000: string;
 		};
-		date_time: {
+		date_time?: {
 			fallback_value: string;
 		};
-		text: string;
+		text?: string;
 	}>;
-	index: number;
+	index?: number;
 };

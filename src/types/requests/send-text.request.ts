@@ -1,5 +1,5 @@
 export type SendTextRequest = {
-	number: string;
+	number?: string;
 	contactId?: string;
 	message: string;
 	isWhisper?: boolean;

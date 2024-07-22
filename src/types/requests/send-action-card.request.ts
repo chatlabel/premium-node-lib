@@ -1,5 +1,5 @@
 export type SendActionCardRequest = {
-	number: string;
+	number?: string;
 	contactId?: string;
 	action_card_id: string;
 	forceSend: boolean;

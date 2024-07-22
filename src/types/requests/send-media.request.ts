@@ -1,5 +1,5 @@
 export type SendMediaRequest = {
-	number: string;
+	number?: string;
 	contactId?: string;
 	forceSend: boolean;
 	verifyContact: boolean;
