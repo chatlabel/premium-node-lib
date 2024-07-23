@@ -1,21 +1,25 @@
 # AppChat Premium API Wrapper for NodeJS
 
-Esta biblioteca foi desenvolvida no intuito de facilitar a integração com a API do produto Premium, para acelerar e facilitar quaisquer integrações ou novos projetos. 
+Esta biblioteca foi desenvolvida com o intuito de facilitar a integração com a API do produto Premium, para acelerar e simplificar quaisquer integrações ou novos projetos. 
 
 
 ## Primeiro uso
 
 Primeiramente, adicione a biblioteca ao seu projeto Node usando:
 ~~~Bash
-npm install @appchat/premium-node-lib
+npm install @appchat-app/premium-node-lib
+~~~
+Ou utilizando Yarn:
+~~~Bash
+yarn add @appchat-app/premium-node-lib
 ~~~
 
 Exemplo de uso:
 ~~~Node
 // import ESM
-import Premium from "@appchat/premium-node-lib";
+import Premium from "@appchat-app/premium-node-lib";
 // import CJS
-const Premium = require("@appchat/premium-node-lib").default;
+const Premium = require("@appchat-app/premium-node-lib").default;
 
 const api = new Premium({
     domainUrl: "appchat.app", // defaults to appchat.app
